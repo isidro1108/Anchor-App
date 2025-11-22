@@ -66,13 +66,13 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
+    <div className="min-h-screen bg-linear-to-br from-slate-900 via-purple-900 to-slate-900">
       {/* Header */}
       <header className="border-b border-white/10 backdrop-blur-sm bg-white/5">
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white font-bold text-xl">
+              <div className="w-10 h-10 rounded-lg bg-linear-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white font-bold text-xl">
                 A
               </div>
               <h1 className="text-2xl font-bold text-white">Anchor App</h1>
@@ -98,7 +98,7 @@ export default function Home() {
           <div className="inline-block mb-6">
             <span className="text-6xl animate-bounce">⚓</span>
           </div>
-          <h2 className="text-5xl md:text-7xl font-bold text-white mb-6 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+          <h2 className="text-5xl md:text-7xl font-bold text-white mb-6 bg-linear-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text">
             Stay Anchored
           </h2>
           <p className="text-xl text-white/70 max-w-2xl mx-auto mb-8">
@@ -116,7 +116,7 @@ export default function Home() {
               <div className="flex gap-4 justify-center">
                 <button
                   onClick={() => setIsRunning(!isRunning)}
-                  className="px-6 py-3 rounded-lg font-semibold transition-all transform hover:scale-105 active:scale-95 bg-gradient-to-r from-blue-500 to-purple-600 text-white shadow-lg hover:shadow-xl"
+                  className="px-6 py-3 rounded-lg font-semibold transition-all transform hover:scale-105 active:scale-95 bg-linear-to-r from-blue-500 to-purple-600 text-white shadow-lg hover:shadow-xl"
                 >
                   {isRunning ? "⏸️ Pause" : "▶️ Start"}
                 </button>
@@ -156,7 +156,7 @@ export default function Home() {
                 <h4 className="text-xl font-bold text-white mb-2">{feature.title}</h4>
                 <p className="text-white/70 text-sm">{feature.description}</p>
                 {selectedFeature === feature.id && (
-                  <div className={`mt-4 h-1 bg-gradient-to-r ${feature.color} rounded-full animate-pulse`} />
+                  <div className={`mt-4 h-1 bg-linear-to-r ${feature.color} rounded-full animate-pulse`} />
                 )}
               </div>
             ))}
